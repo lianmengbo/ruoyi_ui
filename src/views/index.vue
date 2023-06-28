@@ -2,15 +2,18 @@
   <div class="app-container home">
     <div class="box-pie" style="height: 400px" ref="chart"></div>
     <index_2></index_2>
+    <websocket></websocket>
   </div>
 
 </template>
 <script>
 import echarts from 'echarts'
 import index_2 from "./components/index/index_2";
+import websocket from "./websocket";
 export default {
   components:{
-    index_2
+    index_2,
+    websocket
   },
   name: "Index",
   data(){

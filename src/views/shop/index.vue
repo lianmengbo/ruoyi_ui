@@ -51,17 +51,17 @@
       </el-main>
       <el-main style="display: flex; background-color: #E7E4E5;">
 
-          <div style="flex :1" >
+            <div style="flex :2" >
 
-          </div>
-          <div style="flex :6" class="main-body">
-实打实
-          </div>
-          <div style="flex :1">
+            </div>
+            <div style="flex :8" class="main-body">
+              <daohang></daohang>
+              <div>猜你喜欢</div>
+              <div>商品</div>
+            </div>
+            <div style="flex :2">
 
-          </div>
-
-
+            </div>
       </el-main>
 
 <!--      </el-container>-->
@@ -75,8 +75,12 @@
 </template>
 
 <script>
+  import daohang from "../components/shop/daohang";
   export default {
     name: "shop",
+    components:{
+      daohang,
+    },
     data() {
       return {
         dropdownTitle: '中国大陆',
@@ -129,8 +133,8 @@
 
 <style scoped>
   .main-body{
-    border-radius: 18px 18px 0 0;
-    position: relative;
+    margin-top: -10px;
+    border-radius: 18px 18px 18px 18px;
     background-color: #ffffff;
 
   }
@@ -162,7 +166,7 @@
     background-color: #FFFFFF;;
     color: #333;
     text-align: center;
-    line-height: 160px;
+    line-height: 80px;
   }
 
   body > .el-container {
